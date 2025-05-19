@@ -15,9 +15,9 @@ const Home = () => {
           {trendingPodcasts?.map(({ _id, podcastTitle, podcastDescription, imageUrl }) => (
             <PodcastCard 
               key={_id}
-              imgUrl={imageUrl}
-              title={podcastTitle}
-              description={podcastDescription}
+              imgUrl={imageUrl!}
+              title={podcastTitle!}
+              description={podcastDescription!}
               podcastId={_id}
             />
           ))}
